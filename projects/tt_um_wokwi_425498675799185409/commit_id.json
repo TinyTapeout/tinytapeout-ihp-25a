@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 8f10bc8c",
+  "repo": "https://github.com/17o2/tt-wokwi-spinny",
+  "commit": "2fe04de383c874c1b433f14bd6c9ad7bba560f70",
+  "workflow_url": "https://github.com/17o2/tt-wokwi-spinny/actions/runs/13873847999",
+  "sort_id": 1742050872334,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
