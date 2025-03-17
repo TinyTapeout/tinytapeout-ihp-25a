@@ -9,15 +9,26 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-"Explain how your project works
-It is just  a few gates"
+"This project is a 4-bit synchronous counter with a fully-decoded hex output. An enable input is provided
+
+Decoding is done entirely with 29 2-input NAND gates, following the insanely minimized design from Kim Oyhus
+in the code golf stack exchange. One gate was trivially elminated because the complementary input was
+available. Possibly further optimization would be possible since it was not optimized for this particular
+situation. There are many gate delays between the input chanage and the last output change, however
+that is deemed insignificant for a display application. 
+"
 
 ## How to test
 
-"Explain how to use your project
-compare with logic" 
+"Reset will reset the counter to 0 asynchronously, so the display will show '0'
+ IN0 is enable (active high). To get the counter to count make IN0 high
+ The counter counts on the positive edge of the clock input. 
+ Fully decoded 7-segment (active high) is provided on outputs 0..6. Output 7 is not used. 
+
+
+" 
 
 ## External hardware
 
-"List external hardware used in your project (e.g. PMOD, LED display, etc), if any
-no hardware rquried"
+"No external hardware is required beyond the standard demo board"
+![kim_solution](https://github.com/user-attachments/assets/dd6803ec-c1c2-43b0-928c-e148c7fe08c3)
