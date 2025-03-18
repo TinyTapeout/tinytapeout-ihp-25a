@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     425499738293047297       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Hackaday Workshop Design"      # Project title
+  title:        "OR Gate-Based 7-Segment Display Decoder"      # Project title
   author:       "Kirill"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "This project will display a 9 if inputs 12567 are true. The clock button will display the dot. This design uses a half adder."      # One line description of what your project does
+  discord:      "_sibirski_"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "This project will display numbers from 1 to 8 based on which switch is turned on. For example, if switch number 1 is on, it will display the number 1 on the 7-segment display. The dot is connected to the clock to visualize the clock's functionality."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2

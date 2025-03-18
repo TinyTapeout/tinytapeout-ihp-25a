@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This project will display a digit 9 if inputs 12567 are true. It will display a dot if the set button is clicked. This project utilizes a half adder on pins OUT4 and OUT5 to prevent both of them from being on at the same time.
+This project will display numbers from 1 to 8 based on which switch is turned on. For example, if switch number 1 is on, it will display the number 1 on the 7-segment display. The dot is connected to the clock to visualize the clock's functionality.
 
 ## How to test
 
