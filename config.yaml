@@ -8,6 +8,30 @@ no_power_gating: false
 
 datasheet_config:
 
+  disabled:
+    - tt_um_CLA8
+    - tt_um_rejunity_sn76489
+    - tt_um_DaDDS
+    - tt_um_adder_accumulator_sathworld
+    - tt_um_spi_pwm_djuara
+    - tt_um_wokwi_411783629732984833
+    - tt_um_kapilan_alarm
+    - tt_um_stochastic_addmultiply_CL123abc
+    - tt_um_dlfloatmac
+    - tt_um_hpdl1414_uart_atudoroi
+    - tt_um_ronikant_jeremykam_tinyregisters
+    - tt_um_koggestone_adder8
+    - tt_um_dff_mem
+    - tt_um_rejunity_ay8913
+    - tt_um_moody_mimosa
+    - tt_um_devmonk_ay8913
+    - tt_um_bitty
+    - tt_um_wokwi_407306064811090945
+    - tt_um_betz_morse_keyer
+    - tt_um_algofoogle_vga
+    - tt_um_control_block
+    - tt_um_virantha_enigma
+
   artwork:
     - {id: TT_POCA_01_A, rotate: 90deg}
     - {id: TT_POCA_01_B, rotate: 90deg}
