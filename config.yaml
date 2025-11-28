@@ -5,3 +5,7 @@ project_dir: 'projects'
 top_level_macro: 'tt_ihp_wrapper'
 powered_netlists: false
 no_power_gating: false
+
+datasheet_config:
+  include:
+    - docs/chip_map.typ
