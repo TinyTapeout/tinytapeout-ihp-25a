@@ -9,3 +9,4 @@ no_power_gating: false
 datasheet_config:
   include:
     - docs/chip_map.typ
+    - docs/funding.typ
