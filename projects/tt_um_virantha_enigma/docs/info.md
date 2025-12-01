@@ -22,7 +22,7 @@ the *Enigma I*[^3] used by the German Army and Air Force; it comes with 3 rotor
 slots, the 5 original Rotors, the UKW-B Reflector, and plugboard.  The only
 limitation is **that the plugboard only supports 3 wires**, whereas the actual
 wartime procedure was to use up to 10 wires.  **This limits the key length of 
-this implementation to 52-bits**.  The calculation is shown [below](#key-length-calculation).
+this implementation to 52-bits**.  The calculation is shown below.
 
 [^1]: https://piotte13.github.io/enigma-cipher/
 [^2]: https://www.dcode.fr/enigma-machine-cipher
@@ -181,7 +181,7 @@ is the pseudo code for setting up and scrambling/descrambling with this machine:
 
 ### Control FSM
 
-![alt text](images/fsm.png)
+![FSM](images/fsm.png)
 
 The state machine diagram source can be found on github[^8].
 
