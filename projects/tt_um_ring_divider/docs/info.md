@@ -11,11 +11,9 @@ You can also include images in this folder and reference them in the markdown. E
 
 A ring oscillator working in the GHz range is divided to give an observable output frequency in the 20 MHz range.
 
-Top-Level Complete Mixed-Signal Functionality Verification in Verilog
-![functionality](functionality_GHz-oscillator-divider.png)
+![Top-Level Complete Mixed-Signal Functionality Verification in Verilog](functionality_GHz-oscillator-divider.png)
 
-PEX Sims Verifying Performance
-![ngspice output](spice_GHz_ring-MHz_divout.png)
+![PEX Sims Verifying Performance](spice_GHz_ring-MHz_divout.png)
 
 ## How to test
 
