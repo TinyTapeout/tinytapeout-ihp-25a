@@ -14,6 +14,7 @@ I have no idea yet! But something something counting and showing it on 7-segment
 ## How to test
 
 Enable it, get a clock and watch it work.
+
 ## External hardware
 
 7-segment display from demo board
