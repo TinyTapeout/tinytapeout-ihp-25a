@@ -10,10 +10,7 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 This project implements the Tappu CPU with a ROM memory that turns blinks all outputs
+
 ## How to test
 
 Watch the output blink :)
-
-## External hardware
-
-None
