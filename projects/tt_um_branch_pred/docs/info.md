@@ -19,12 +19,12 @@ It's best to run this project in its Docker container.
 
 The `func_sim` directory contains a C++ functional simulation of the infrastructure. It parses a log file of a simulated execution of a RISC-V reference program and predicts the branch direction on each branch instruction.
 From the `func_sim` directory:
--Compile the reference: `riscv32-unknown-elf-gcc -O0 start.S reference.c -o reference -march=rv32i_zicsr_zifencei -T link.ld -nostartfiles -nostdlib`
--Disassemble reference: `riscv32-unknown-elf-objdump -d reference > reference_dis.txt` (for info only)
--Run Spike on reference: `spike --log=spike_log.txt --log-commits --isa=rv32i_zicsr_zifencei --priv=m -m128 reference` (to generate execution log)
--Make Makefile: `cmake CMakeLists.txt`
--Compile functional simulation: `make`
--Run: `./build/func_sim ./spike_log.txt`
+- Compile the reference: `riscv32-unknown-elf-gcc -O0 start.S reference.c -o reference -march=rv32i_zicsr_zifencei -T link.ld -nostartfiles -nostdlib`
+- Disassemble reference: `riscv32-unknown-elf-objdump -d reference > reference_dis.txt` (for info only)
+- Run Spike on reference: `spike --log=spike_log.txt --log-commits --isa=rv32i_zicsr_zifencei --priv=m -m128 reference` (to generate execution log)
+- Make Makefile: `cmake CMakeLists.txt`
+- Compile functional simulation: `make`
+- Run: `./build/func_sim ./spike_log.txt`
 
 The `tests` directory includes all CocoTB test for this design.
 Run them with `make`.
@@ -49,15 +49,15 @@ Reset waveform:
 
 
 To generate the instructions to use, you can either:
-1) Parse `func_sim/spike_log.txt` with is a log of all instructions ran for the program `func_sim/reference.c` simulated on RISC-V rv32i_zicsr_zifencei. See `func_sim/src/func_sim.cpp` to see how that's done.
-2) Generate a new log for a program of your choice. For this, you'll need to build the Docker. Word of caution: The Dockert takes >30 min top build and weighs >24GB.
-   1) From root, run: `docker build -t tt_brand_predictor .`
-   2) Once complete, run: ``docker run -it -v `pwd`:/tmp tt_brand_predictor``
-   3) Move to `func_sim`: `cd func_sim`
-   4) Compile `reference.c`: `riscv32-unknown-elf-gcc -O0 start.S reference.c -o reference -march=rv32i_zicsr_zifencei -T link.ld -nostartfiles -nostdlib`
-   5) Optionally, view the disassembly with: `riscv32-unknown-elf-objdump -d reference > reference_dis.txt`
-   6) Generate execution log with Spike: `spike --log=spike_log.txt --log-commits --isa=rv32i_zicsr_zifencei --priv=m -m128 reference`
-3) Running `func_sim` outputs a list of all branch instruction and the state of important registers in the branch predictor. You can use that to check if the predicted branch outcome is correct: `./build/func_sim ./spike_log.txt`
+1. Parse `func_sim/spike_log.txt` with is a log of all instructions ran for the program `func_sim/reference.c` simulated on RISC-V rv32i_zicsr_zifencei. See `func_sim/src/func_sim.cpp` to see how that's done.
+2. Generate a new log for a program of your choice. For this, you'll need to build the Docker. Word of caution: The Dockert takes >30 min top build and weighs >24GB.
+   1. From root, run: `docker build -t tt_brand_predictor .`
+   2. Once complete, run: ``docker run -it -v `pwd`:/tmp tt_brand_predictor``
+   3. Move to `func_sim`: `cd func_sim`
+   4. Compile `reference.c`: `riscv32-unknown-elf-gcc -O0 start.S reference.c -o reference -march=rv32i_zicsr_zifencei -T link.ld -nostartfiles -nostdlib`
+   5. Optionally, view the disassembly with: `riscv32-unknown-elf-objdump -d reference > reference_dis.txt`
+   6. Generate execution log with Spike: `spike --log=spike_log.txt --log-commits --isa=rv32i_zicsr_zifencei --priv=m -m128 reference`
+3. Running `func_sim` outputs a list of all branch instruction and the state of important registers in the branch predictor. You can use that to check if the predicted branch outcome is correct: `./build/func_sim ./spike_log.txt`
 
 ## External hardware
 - Some way to drive 10b (Arduino, FPGA, etc.)
