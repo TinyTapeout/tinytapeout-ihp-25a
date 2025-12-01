@@ -1,9 +1,3 @@
-# Histogramming on Chip for Short Luminescence Signals
-
-## Isil Isiksalan
-
-## 09 November 2024
-
 ## Background
 
 To measure the lifetime of short luminescence signals effectively, Time-Correlated Single Photon
@@ -11,7 +5,6 @@ Counting (TCSPC) is commonly used. TCSPC measures the time intervals between pho
 detections and a synchronized reference signal, usually from a laser. This data is used to create a
 histogram of photon arrival times, which helps in calculating luminescence lifetimes.
 
-```
 This module is useful in TCSPC systems, particularly after a Time-to-Digital Converter (TDC)
 or other time-tagging components. It processes 6-bit time-tagged data by sorting these events into
 bins. Designed for systems capable of supporting up to 64 bins, our module uses only the odd-
@@ -50,24 +43,13 @@ RESETBINS.
 
 ### Working Principle:
 
-```
-
 1.Initialization and Resetting:Clears bins to zero and sets the module for new data intake.
-
-```
-
-```
 
 2.Data Handling and Binning:Receives data, determines the bin index, and updates bin
 counts according to the input conditions.
 
-```
-
-```
-
 3.State Management:Manages data output and resets based on binning outcomes.
 
-```
 ### Module Testing
 
 The module underwent thorough testing using a testbench that simulated various operational sce-
@@ -82,4 +64,3 @@ narios, including:
 - Testing operational robustness with manipulated enable signals.
 
 All tests verified the module’s functionality.
-```
