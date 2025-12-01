@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 The **AtomNPU** (Neural Processing Unit) is a compact, 4-bit processing module designed to perform basic **multiply-accumulate (MAC)** operations, essential for neural network computations. This NPU efficiently processes input activations and weights to produce quantized output results.
 
-### **Functional Components**
+### Functional Components
 
 1. **Inputs:**
    - **`input_data [3:0]` (`ui_in[3:0]`):** Represents the 4-bit activation vector input to the NPU.
@@ -26,7 +26,7 @@ The **AtomNPU** (Neural Processing Unit) is a compact, 4-bit processing module d
    - **`clk` (Clock):** Synchronizes the operations within the NPU.
    - **`rst_n` (Reset):** An active-low signal that resets the NPU to its initial state.
 
-### **Operational Workflow**
+### Operational Workflow
 
 1. **Initialization (IDLE State):**
    - Upon receiving a **reset (`rst_n` low)**, the NPU enters the **IDLE** state.
@@ -55,7 +55,7 @@ The **AtomNPU** (Neural Processing Unit) is a compact, 4-bit processing module d
    - The **`done`** signal is asserted (`1`) to indicate the operation's completion.
    - The NPU returns to the **IDLE** state, ready for the next operation.
 
-### **Clamping Mechanism**
+### Clamping Mechanism
 
 To prevent overflow and ensure the output remains within the 4-bit constraint, the NPU incorporates a **clamping mechanism**:
 
@@ -67,7 +67,7 @@ To prevent overflow and ensure the output remains within the 4-bit constraint, t
 
 Below is a step-by-step guide to facilitate thorough testing.
 
-### **Testing Procedure**
+### Testing Procedure
 
 1.  **Initialization:**
     
@@ -89,7 +89,3 @@ Below is a step-by-step guide to facilitate thorough testing.
         -   Observe the **LEDs** connected to `uo_out[3:0]` to view the resulting 4-bit output.
     -   **`done` Signal (`uo_out[4]`):**
         -   The **status LED** connected to `uo_out[4]` will illuminate (`1`) once the operation is complete.
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
