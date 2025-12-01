@@ -19,8 +19,3 @@ Use the associated PMOD board or interact with the UART. The following are the e
 - "SW: 0xFFFF" Coming from the peripheral going to the design
 - "7S: 0xFFFF" Coming from this design going to the peripheral
 - "BT: 0xFFFF" Coming from the peripheral going to the design
-
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
