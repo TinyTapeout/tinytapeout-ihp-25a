@@ -2,7 +2,7 @@
 
 When the system boots up, it will start accessing the SPI bus to set up a connected SPI Flash memory in XIP mode and start executing instructions from there. The GPIO can be used to output data, e.g. as a bitbanged UART.
 
-![Environment](underserved_env.png)
+![Flow diagram](underserved_env.png)
 
 ## How to test
 
@@ -11,50 +11,50 @@ The testbench contains a model of an SPI Flash. A program in Verilog Hex format 
 Underserved can easiest be run locally using FuseSoC.
 
 Install FuseSoC
-~~~
+```bash
 pip install fusesoc
-~~~
+```
 
 Create and enter a new workspace
-~~~
+```bash
 mkdir workspace && cd workspace
-~~~
+```
 
 Register underserved as a library in the workspace
-~~~
+```bash
 fusesoc library add underserved /path/to/prince
-~~~
+```
 ...if repo is available locally or...
 ...to get the upstream repo
-~~~
+
+```bash
 fusesoc library add underserved https://github.com/olofk/underserved
-~~~
+```
 
 Show available cores in workspace (probally just underserved for now if you haven't added other libraries)
-~~~
+```bash
 fusesoc core list
-~~~
+```
 
 Show info about underserved
-~~~
+```bash
 fusesoc core show underserved
-~~~
+```
 
 Run linting (static code checks) using Verilator
-~~~
+```bash
 fusesoc run --target=lint underserved
-~~~
+```
 
 Run underserved testbench
-~~~
+```bash
 fusesoc run --target=sim underserved
-~~~
+```
 
 Run with modelsim instead of default tool (icarus)
-~~~
+```bash
 fusesoc run --target=sim underserved --tool=modelsim
-~~~
-
+```
 
 ## External hardware
 
