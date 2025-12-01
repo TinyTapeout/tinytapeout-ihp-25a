@@ -210,13 +210,13 @@ The testbench will:
 
 ### Testbench Overview
 
-#### **Assembling Code**
+#### Assembling Code
 To convert `instructions_for_em.txt` into machine code (if needed for testing):
 ```bash
 ./er_tool -a -i instructions_for_em.txt -o output.txt 
 ```
 
-#### **Disassembling Code**
+#### Disassembling Code
 To convert machine code (`output.txt`) back into assembly:
 ```bash
 ./er_tool -d -i output.txt -o instructions_for_em.txt 
