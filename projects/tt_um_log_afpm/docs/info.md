@@ -40,7 +40,6 @@ The multiplier operates using a finite state machine (FSM) that progresses throu
 
 **clk** operates at a 50 MHz frequency.
 
-Table: State Transition for FP-16 Multiplication of (0x43BC)*(0x4190)
 | **Time (ns)** | **ui_in (Input A)** | **uio_in (Input B)**      | **Reset** | **State**            | **uo_out (Output)** | **Clock** |
 |---------------|---------------------|---------------------------|-----------|----------------------|---------------------|-----------|
 | 0             | `00000000`          | `00000000`                |  0        | Reset                | `xxxxxxxx`          |0          |
@@ -60,13 +59,15 @@ Table: State Transition for FP-16 Multiplication of (0x43BC)*(0x4190)
 | 220           | `01000011`          | `01000001`                |  1        | OUTPUT_1             | `01110101`          |0          |
 | 230           | `01000011`          | `01000001`                |  1        | OUTPUT_2             | `01001001`          |1          |
 | 240           | `01000011`          | `01000001`                |  1        | OUTPUT_2             | `01001001`          |0          |
+Table: State Transition for FP-16 Multiplication of (0x43BC)*(0x4190)
 
 
 Other Operands can also given as follows:
-Table: Multiple Operands with Expected output
+
 | **Input A** | **Input B** | **Output**  |
 |--------------|--------------|------------|
 | `0x4871`     | `0x482e`     | `0x54a6`   |
 | `0x41bd`     | `0x46ef`     | `0x4d31`   |
 | `0x436c`   | `0x45aa`     | `0x4d4c`   |
 | `ox44df`     | `0x483d`     | `50x12c`  |
+Table: Multiple Operands with Expected output
