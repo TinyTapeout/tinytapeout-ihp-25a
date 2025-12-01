@@ -23,16 +23,10 @@ The demo will change effect based on inputs on `ui_in`.
 ### Screenshots
 
 ![Default](Default.png)
-<br />
-Default
 
 ![Dual Mode](Dual_Mode.png)
-<br />
-Dual Mode
 
 ![H Wave](H_Wave.png)
-<br />
-H Wave
 
 ### Video
 
