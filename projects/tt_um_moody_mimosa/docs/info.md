@@ -47,7 +47,7 @@ From the outher world, only one layer can be influenced directly (stimuli) and o
 
 #### Architecture
 
-![](figs/Mimosa_model_v1.1.png)
+![](images/Mimosa_model_v1.1.png)
 
 #### Implementation details
 
