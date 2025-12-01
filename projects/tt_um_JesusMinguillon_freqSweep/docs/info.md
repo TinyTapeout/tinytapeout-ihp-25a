@@ -19,11 +19,11 @@ For simulation, use the test bench (test/tb.v), which includes a module (src/per
 
 The frequency (or period) ratio between the input clock (clk) and the output clock (uo_out[0]) is given by clk_factor register of periodCount module:
 
-![image info](./figure1.png)
+![](./figure1.png)
 
 Zoom in:
 
-![image info](./figure2.png)
+![](./figure2.png)
 
 Unit tests:
 ```
@@ -112,11 +112,11 @@ make[1]: Leaving directory '/home/jesus/tt09-verilog-freqSweep/test'
 
 Input clock signal (yellow) and ouput clock signal (blue) acquired with an oscilloscope (analog inputs and passive probes):
 
-![image info](./figure3.png)
+![](./figure3.png)
 
 Zoom in:
 
-![image info](./figure4.png)
+![](./figure4.png)
 
 ## External hardware
 
