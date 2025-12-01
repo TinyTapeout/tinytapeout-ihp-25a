@@ -31,4 +31,4 @@ https://github.com/ADDTDR/HPDL-1414-Pmod-Module
 
 
 ## Signal test 
-![alt text](<img/Screenshot from 2025-02-26 22-02-32.png>)
+![Screenshot of GTKWave](img/waveforms.png)
