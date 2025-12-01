@@ -8,7 +8,8 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## Design Description
-![image](https://github.com/user-attachments/assets/0fc2ef2e-91de-476d-ae27-c15f03bbb6f4)
+
+![MAC unit block diagram](./MAC_unit_block_diagram.png)
 
 The digital design is a 5 stage pipelined architecture implementation of MAC Operation for 16 bit DLFloat numbers. DLFloat is a 16-bit floating-point format designed for deep learning training and inference, where speed is prioritized over precision.
 
@@ -39,7 +40,7 @@ Bias exponent: 31
 
 •	After the MAC operation, the 16-bit accumulated result is pushed through uo_out pins over two clock cycles. First the msb 8 bits are pushed out followed by lsb bits.
 
-![image](https://github.com/user-attachments/assets/aeb56247-fc7e-4823-b9f9-1acdaddd2d44)
+![Waveforms](./Waveform.png)
 
 
 This arrangement helps in achieving a pipelined architecture where after 5 clock cycles from reset the output values can be pushed out in every cycle. 
