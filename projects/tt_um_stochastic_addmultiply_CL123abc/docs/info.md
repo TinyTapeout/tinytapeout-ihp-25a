@@ -8,17 +8,18 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-![image](https://github.com/user-attachments/assets/571bae1e-6f5d-4b4e-9777-e8c605c9ca7c)
+![](images/1.png)
 
-![image](https://github.com/user-attachments/assets/6e3752d7-a5d7-4eb7-84ed-525289fe7e87)
+![](images/2.png)
 
-![image](https://github.com/user-attachments/assets/fcab6fb1-10ba-4726-8425-0483b531dcbb)
+![](images/3.png)
 
-![image](https://github.com/user-attachments/assets/efc9ba6b-c90a-40f7-8d51-2793fe7630d8)
+![](images/4.png)
 
-![image](https://github.com/user-attachments/assets/44a38e96-9751-43b5-a7a7-c04c945208de)
+![](images/5.png)
 
-REFERENCES USED
+
+## REFERENCES USED
 ​
 
 General Stochastic Computing Design:​
