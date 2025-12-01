@@ -12,6 +12,7 @@ You can also include images in this folder and reference them in the markdown. E
 This is a hash table with 8 slots, 4-bit keys, and 4-bit values. Keys are entered on pins `KEY3-KEY0`, values are entered on pins `VAL3-VAL0`. When given a command, and told to execute via the `GO` line, the hash table hashes the key, and begins linearly probing into the hash table. Once a suitable slot is found, the given command is executed on that slot, or `STATUS1-STATUS0` returns a suitable error message. The table takes care to buffer the inputs so that they're not changed during probing. 
 
 The commands are:
+
 | Command    | CMD1 | CMD0 |   |   |
 |------------|------|------|---|---|
 | CMD_LOOKUP | 0    | 0    |   |   |
@@ -19,6 +20,7 @@ The commands are:
 | CMD_DELETE | 1    | 0    |   |   |
 
 The status codes are:
+
 | Status          | STATUS1 | STATUS0 | Description                        |
 |-----------------|---------|---------|------------------------------------|
 | STATUS_OK       | 0       | 0       | Operation Succeeded                |
