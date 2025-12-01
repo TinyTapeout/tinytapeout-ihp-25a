@@ -40,9 +40,9 @@ To test and use this project, you will need the following hardware:
 
  **Attention:** The above Pmods cannot be directly connected to the [TinyTapeout 4+ demo board](https://github.com/TinyTapeout/tt-demo-pcb)! The Pmods' pins need to be individually connected to the right Pmod pins of the TinyTapeout 4+ demo board, as documented in the IO section.
 
- ## FPGA Implementation
+## FPGA Implementation
 
- The design has been implemented and tested on a Sipeed Tang Nano 9k FPGA board using [my own base PCB](https://github.com/gfcwfzkm/t9k-baseboard) to have enough available Pmods to test the design.
+The design has been implemented and tested on a Sipeed Tang Nano 9k FPGA board using [my own base PCB](https://github.com/gfcwfzkm/t9k-baseboard) to have enough available Pmods to test the design.
 
 ## Acknowledgements
 
