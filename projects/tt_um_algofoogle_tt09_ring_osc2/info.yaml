@@ -3,7 +3,7 @@ project:
   title:        "Verilog ring oscillator V2"
   author:       "algofoogle (Anton Maurovic)"
   discord:      "algofoogle"
-  description:  "Multiple simple ring oscillators by instantiating sky130 inv_2 inverter rings"
+  description:  "Multiple ring oscillators with simple PWM experiments"
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
