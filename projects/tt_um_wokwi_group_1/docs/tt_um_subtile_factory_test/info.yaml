@@ -1,0 +1,43 @@
+project:
+  title: "Subtile factory test"
+  author: "Uri Shaked"
+  discord: ""
+  description: "uo_out  = rst_n ? (clk ? ui_in : ~ui_in) : 8'b0"
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+pinout:
+  # Inputs
+  ui[0]: "IN0"
+  ui[1]: "IN1"
+  ui[2]: "IN2"
+  ui[3]: "IN3"
+  ui[4]: "IN4"
+  ui[5]: "IN5"
+  ui[6]: "IN6"
+  ui[7]: "IN7"
+
+  # Outputs
+  uo[0]: "OUT0"
+  uo[1]: "OUT1"
+  uo[2]: "OUT2"
+  uo[3]: "OUT3"
+  uo[4]: "OUT4"
+  uo[5]: "OUT5"
+  uo[6]: "OUT6"
+  uo[7]: "OUT7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
